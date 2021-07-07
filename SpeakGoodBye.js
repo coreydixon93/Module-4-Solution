@@ -1,18 +1,7 @@
 (function () {
-  speakWord = "Good Bye";
+  var speakWord = "Good Bye";
   byeSpeaker = new Object(); 
-  byeSpeaker.speak = function () {
-    return speakWord;
+  byeSpeaker.speak = function (name) {
+    console.log(speakWord + " " + name);
     }
 })();
-
-
-// (function byeSpeaker() {
-//   var byeSpeaker = new byeSpeaker();{
-//     function speak(name) { //method
-//       console.log(speakWord + " " + names[i]); // How do I pass the names array from script.js?
-//     }
-//     this.speak = speak;
-//   }
-// })();
-// byeSpeaker.speak = byeSpeaker;
