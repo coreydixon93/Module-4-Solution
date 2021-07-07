@@ -1,13 +1,10 @@
-var speakWord = "Hello";
-(function helloSpeaker() {
-    var helloSpeaker = new helloSpeaker;{
-      function speak(name) { //method
-        console.log(speakWord + " " + names[i]); // How do I pass the names array from script.js?
-      }
-      this.speak = speak;
+(function () {
+  speakWord = "Hello";
+  helloSpeaker = new Object(); 
+  helloSpeaker.speak = function () {
+    return speakWord;
     }
 })();
-helloSpeaker.speak = helloSpeaker;
 // STEP 2: Wrap the entire contents of SpeakHello.js inside of an IIFE
 // See Lecture 52, part 2
 

@@ -22,18 +22,21 @@
 //
 
 (function () {
-  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-  var firstLetter = names[i].charAt(0).toLowerCase(); //this throws an error saying charAt is undefined
+  names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
   for (var i = 0; i < names.length; i++) {
-    var firstLetter = String(names).charAt(0);
-    if (firstLetter === 'j') { //check if the name starts with a 'J'
-      names.charAt().toLowerCase(); //return names with J to lowercase
-      byeSpeaker.speak(names[i]);
+    const name = names[i];
+    console.log(helloSpeaker);
+    if (name.charAt(0).toLowerCase() === 'j') { //check if the name starts with a 'J'
+      console.log(byeSpeaker.speak() + " " + name);
     } else {
-      helloSpeaker.speak(names[i]);
+      console.log(helloSpeaker.speak() + " " + name);
     }
   }
 })();
+byeSpeaker.speak();
+helloSpeaker.speak();
+
+// helloSpeaker();
 // byeSpeaker(); //call the byeSpeaker function
 // helloSpeaker(); //call the helloSpeaker function
 // STEP 11:
